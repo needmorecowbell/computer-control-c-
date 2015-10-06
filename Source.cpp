@@ -4,7 +4,10 @@ using namespace std;
 
 int ChangeDirectory(const char* url);
 void LeftClick();
+
 int main(){
+
+
 	const int bufferSize = MAX_PATH;
 	char oldDir[bufferSize]; // store the current directory
 
@@ -18,7 +21,8 @@ int main(){
 	
 
 	ChangeDirectory("C:/Program Files (x86)/Internet Explorer");
-	system("iexplore.exe pandora.com");
+
+	system("iexplore.exe pandora.com");//open pandora
 	ChangeDirectory(oldDir);
 	system("pause");
 	int c;
